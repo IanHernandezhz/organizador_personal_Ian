@@ -1,0 +1,49 @@
+﻿1. ¿Diferencia entre repo local y remoto?
+Local: Es tu compu. Tu zona segura donde puedes hacer y deshacer sin que nadie te vea.
+
+
+Remoto: Es la nube (GitHub, GitLab, etc.). Es donde está el proyecto "oficial" para que todo el equipo lo vea y trabaje junto.
+
+
+2. ¿Diferencia entre commit y push?
+commit: Es tomarle una foto a tus avances y guardarla en tu compu. Es como decir "listo, hasta aquí voy bien".
+
+
+push: Es subir esas fotos a GitHub para que los demás vean lo que hiciste. Sin el push, nadie sabe qué cambiaste.
+
+
+3. ¿Para qué sirve el .gitignore?
+Es tu lista negra. Ahí le dices a Git: "Ni se te ocurra subir esto". Sirve para no subir basura, contraseñas secretas, archivos temporales o carpetas gigantescas que no hacen falta.
+
+
+4. ¿Por qué .venv NO se sube a GitHub?
+Porque pesa un demonio y aparte no sirve en otras compus. Si creas el entorno en Windows con Python 3.11, a alguien en Mac no le va a servir. Es mejor que cada quien cree el suyo en su compu.
+
+
+5. ¿Para qué sirve requirements.txt?
+Es la receta de cocina de tu proyecto. En vez de mandar la comida hecha (la carpeta .venv), mandas la lista de ingredientes (las librerías de Python). Con ese archivo, tu compa solo corre pip install -r requirements.txt y se le instala todo en un segundo.
+
+
+6. ¿Diferencia entre fork y clone?
+Fork: Es copiarte un proyecto de otra persona a tu propia cuenta de GitHub. (Ocurre en la web).
+
+
+Clone: Es descargar un proyecto de GitHub a tu compu para ponerte a programar. (Ocurre de la web a tu disco duro).
+
+
+7. ¿Por qué crear una rama (branch) antes de moverle al código?
+Para no regarla en la versión principal (main). La rama es tu zona de pruebas: si algo se rompe, solo se rompe en tu rama y la versión principal sigue funcionando al 100%.
+
+
+8. ¿Qué onda con el Pull Request (PR)?
+Es básicamente levantar la mano y decir: "Oigan, ya terminé mi parte en mi rama, léanla y si les gusta, déjenme meterla al proyecto principal". Es el espacio para que te revisen el código.
+
+
+9. ¿Qué se checa antes de hacer un merge?
+Que el código realmente funcione y no rompa nada.
+Que no haya conflictos (es decir, que no hayas modificado la misma línea de código que otro compa al mismo tiempo).
+Que esté bien escrito y limpio.
+
+
+10. ¿Por qué se usa git pull después de un merge en GitHub?
+Porque al hacer el merge en la página de GitHub, el proyecto en la nube se actualizó, pero tu compu no se entera sola. Usas git pull para bajar esos cambios nuevos a tu máquina y estar al día antes de seguir programando.
